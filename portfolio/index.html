@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Institucional - Marcav Contabilidade</title>
+  <!-- Aponta para o style.css na pasta raiz -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    /* Estilos específicos para a visualização de tabelas e perfil da equipe no Portfólio */
+    .portfolio-hero {
+      background-color: var(--dark-green-bg);
+      color: var(--text-white);
+      padding: 4rem 4%;
+      text-align: center;
+      border-bottom: 2px solid var(--gold);
+    }
+    .portfolio-hero h1 {
+      font-size: 2.8rem;
+      color: var(--text-white);
+      margin-bottom: 0.5rem;
+    }
+    .portfolio-hero p {
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+    
+    .pricing-table-wrapper {
+      overflow-x: auto;
+      margin-top: 1.5rem;
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .pricing-table th {
+      background-color: var(--dark-green-bg);
+      color: var(--gold);
+      padding: 1rem;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    .pricing-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .pricing-table tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .team-card {
+      background-color: var(--card-dark-bg);
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      padding: 2rem;
+      color: var(--text-white);
+      margin-bottom: 1.5rem;
+    }
+    .team-card h3 {
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .team-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    .btn-voltar {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="../index.html#home">
+        <img src="../imagotipo.png" alt="Marcav Contabilidade" class="logo-img">
+      </a>
+    </div>
+
+    <button class="mobile-menu-btn" aria-label="Abrir Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Início</a></li>
+        <li><a href="#institucional">Institucional</a></li>
+        <li><a href="#equipe">Quem Somos</a></li>
+        <li><a href="#investimento">Tabela de Preços</a></li>
+        <li><a href="https://wa.me/5547991803171" target="_blank" class="btn-whatsapp-nav">Fale no WhatsApp <i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header Hero Portfólio -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <a href="../index.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar ao site principal</a>
+      <h1 style="margin-top: 1rem;">PORTFÓLIO INSTITUCIONAL</h1>
+      <p>Transformamos burocracia em eficiência, mais segurança e organização no crescimento da sua empresa.</p>
+    </div>
+  </section>
+
+  <!-- Seção Institucional: Missão, Visão & Valores -->
+  <section id="institucional" class="section-fiscal">
+    <div class="container">
+      <span class="section-subtag">INSTITUCIONAL</span>
+      <h2 class="section-title-fiscal">Missão, Visão & Valores</h2>
+      <p class="section-description">Nossa diretriz estratégica e pilares fundamentais de atuação</p>
+
+      <div class="fiscal-cards-grid">
+        <div class="fiscal-card">
+          <div class="fiscal-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>MISSÃO</h3>
+          <p>Proporcionar excelência na gestão fiscal e societária de nossos clientes, por meio de soluções eficientes, seguras e personalizadas, pautadas na ética, transparência e no compromisso contínuo com resultados.</p>
+        </div>
+
+        <div class="fiscal-card">
+          <div class="fiscal-icon"><i class="fas fa-eye"></i></div>
+          <h3>VISÃO</h3>
+          <p>Consolidar-se como parceira estratégica de referência para escritórios contábeis, impulsionando organização, crescimento sustentável e segurança nas operações fiscais e societárias.</p>
+        </div>
+
+        <div class="fiscal-card">
+          <div class="fiscal-icon"><i class="fas fa-gem"></i></div>
+          <h3>VALORES</h3>
+          <p><strong>Ética:</strong> Atuação com integridade, responsabilidade e respeito em todas as relações profissionais.</p>
+          <p><strong>Comprometimento:</strong> Dedicação permanente na busca por soluções eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Quem Somos / A Equipe -->
+  <section id="equipe" class="banner-mei">
+    <div class="container">
+      <span class="banner-tagline">A EQUIPE</span>
+      <h2 class="banner-title" style="margin-bottom: 2rem;">Quem Somos</h2>
+
+      <div class="team-card">
+        <h3><i class="fas fa-user-tie"></i> Especialista Fiscal (14 anos de experiência)</h3>
+        <p>Profissional da área fiscal formada em Ciências Contábeis, com sólida atuação na gestão e execução de rotinas fiscais. Possui expertise em planejamento tributário, apuração de tributos, escrituração fiscal, entrega de obrigações acessórias e análise da legislação vigente, atendendo empresas enquadradas nos regimes do Simples Nacional, Lucro Presumido e Lucro Real. Atua de forma estratégica e operacional, garantindo conformidade fiscal e cumprimento rigoroso de prazos.</p>
+      </div>
+
+      <div class="team-card">
+        <h3><i class="fas fa-user-shield"></i> Especialista Societária (7+ anos de experiência)</h3>
+        <p>Profissional da área societária formada em Ciências Contábeis, com mais de 7 anos de experiência em atendimento ao público e atuação em rotinas administrativas, societárias e cartorárias. Possui sólida vivência na elaboração, conferência e acompanhamento de atos societários, constituição, alteração e regularização de empresas junto a órgãos públicos, Juntas Comerciais e Cartórios Digitais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Tabela de Investimento / Preços -->
+  <section id="investimento" class="section-fiscal">
+    <div class="container">
+      <span class="section-subtag">INVESTIMENTO</span>
+      <h2 class="section-title-fiscal">Tabela de Preços · Fiscal</h2>
+      <p class="section-description">Valores transparentes e adequados à realidade do seu escritório</p>
+
+      <div class="pricing-table-wrapper">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>SERVIÇO FISCAL</th>
+              <th>VALOR MENSAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apuração Fiscal · Simples Nacional · Prestadores de Serviço</td>
+              <td><strong>R$ 50,00</strong></td>
+            </tr>
+            <tr>
+              <td>Apuração Fiscal · Simples Nacional · Comércio/Indústria</td>
+              <td><strong>R$ 80,00</strong></td>
+            </tr>
+            <tr>
+              <td>Apuração Fiscal · Lucro Presumido · Prestadores de Serviço</td>
+              <td><strong>R$ 135,00</strong></td>
+            </tr>
+            <tr>
+              <td>Apuração Fiscal · Lucro Presumido · Comércio/Indústria</td>
+              <td><strong>R$ 180,00</strong></td>
+            </tr>
+            <tr>
+              <td>Apuração Fiscal · Lucro Real (sem particularidades, TTD)</td>
+              <td><strong>R$ 250,00</strong></td>
+            </tr>
+            <tr>
+              <td>Apuração Fiscal · Lucro Real (com particularidades, TTD, alta complexidade)</td>
+              <td><strong>Sob consulta</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </section>
+
+  <!-- Seção Tabela de Investimento / Preços -->
+  <section id="investimento" class="section-fiscal">
+    <div class="container">
+      <span class="section-subtag">INVESTIMENTO</span>
+      <h2 class="section-title-fiscal">Tabela de Preços · Societário</h2>
+      <div class="pricing-table-wrapper">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>TABELA DE PREÇOS</th>
+              <th>VALOR MENSAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abertura</td>
+              <td><strong>R$ 250,00</strong></td>
+            </tr>
+            <tr>
+              <td>Alteração & Transformação</td>
+              <td><strong>R$ 300,00</strong></td>
+            </tr>
+            <tr>
+              <td>Assessoria MEI</td>
+              <td><strong>R$ 100,00</strong></td>
+            </tr>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+<!-- Detalhamento: O que está incluso -->
+      <div class="detalhamento-container">
+        <span class="section-subtag">DETALHAMENTO</span>
+        <h3 class="section-title-fiscal detalhamento-title">O que está incluso</h3>
+
+        <div class="detalhamento-grid">
+          
+          <!-- Card: Abertura -->
+          <div class="detalhamento-card">
+            <h4 class="detalhamento-card-title">Abertura</h4>
+            <span class="detalhamento-card-price">R$ 250,00</span>
+            <ul class="detalhamento-list">
+              <li><i class="fas fa-check check-icon"></i>Viabilidade municipal e estadual</li>
+              <li><i class="fas fa-check check-icon"></i>Contrato social e registro</li>
+              <li><i class="fas fa-check check-icon"></i>Inscrição municipal e estadual</li>
+              <li><i class="fas fa-check check-icon"></i>Inscrição no CNPJ</li>
+              <li><i class="fas fa-check check-icon"></i>Opção pelo Simples Nacional</li>
+              <li><i class="fas fa-check check-icon"></i>Acesso a portais e emissão de NF</li>
+              <li><i class="fas fa-check check-icon"></i>Alvarás e licenças obrigatórias</li>
+              <li><i class="fas fa-check check-icon"></i>Primeiras CNDs (Municipal, Estadual, Federal)</li>
+            </ul>
+          </div>
+
+          <!-- Card: Alteração / Transformação -->
+          <div class="detalhamento-card">
+            <h4 class="detalhamento-card-title">Alteração / Transformação</h4>
+            <span class="detalhamento-card-price">R$ 300,00</span>
+            <ul class="detalhamento-list">
+              <li><i class="fas fa-check check-icon"></i>Viabilidade municipal e estadual</li>
+              <li><i class="fas fa-check check-icon"></i>Contrato social e registro</li>
+              <li><i class="fas fa-check check-icon"></i>Atualização de inscrição municipal e estadual</li>
+              <li><i class="fas fa-check check-icon"></i>Inscrição no CNPJ</li>
+              <li><i class="fas fa-check check-icon"></i>Opção pelo Simples Nacional</li>
+              <li><i class="fas fa-check check-icon"></i>Acesso a portais e emissão de NF</li>
+              <li><i class="fas fa-check check-icon"></i>Atualização de alvarás e licenças</li>
+              <li><i class="fas fa-check check-icon"></i>Primeiras CNDs (Municipal, Estadual, Federal)</li>
+            </ul>
+          </div>
+
+          <!-- Card: Assessoria MEI -->
+          <div class="detalhamento-card">
+            <h4 class="detalhamento-card-title">Assessoria MEI</h4>
+            <span class="detalhamento-card-price">R$ 100,00</span>
+            <ul class="detalhamento-list">
+              <li><i class="fas fa-check check-icon"></i>Processo de viabilidade municipal</li>
+              <li><i class="fas fa-check check-icon"></i>Emissão do Certificado de Condição de MEI (CCMEI)</li>
+              <li><i class="fas fa-check check-icon"></i>Emissão de inscrição municipal e estadual (se necessário)</li>
+              <li><i class="fas fa-check check-icon"></i>Emissão de inscrição no CNPJ</li>
+              <li><i class="fas fa-check check-icon"></i>Acesso à prefeitura e consulta de pendências</li>
+              <li><i class="fas fa-check check-icon"></i>Emissão do Alvará de Localização e Funcionamento</li>
+              <li><i class="fas fa-check check-icon"></i>Primeiras CNDs (Municipal, Estadual, Federal)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="fiscal-notice-bar" style="margin-top: 2rem;">
+        <div class="notice-icon"><i class="fas fa-info-circle"></i></div>
+        <p class="notice-text">Serviços societários e demandas sob medida para escritórios contábeis também podem ser contratados sob consulta.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner CTA Contatos -->
+  <section class="portfolio-cta-banner">
+    <div class="container portfolio-cta-content">
+      <div class="portfolio-cta-title">
+        <span>Gargalos Operacionais?</span>
+        <h2>VAMOS CONVERSAR?</h2>
+        <small>Marcav Contabilidade</small>
+      </div>
+      <div class="portfolio-cta-buttons">
+        <a href="https://wa.me/5547991803171" target="_blank" class="btn-cta-dark"><i class="fab fa-whatsapp"></i> (47) 99180-3171</a>
+        <a href="mailto:marcavcontabilidade@gmail.com" class="btn-cta-dark"><i class="far fa-envelope"></i> E-MAIL</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Principal -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="../imagotipo.png" alt="Marcav Contabilidade" class="footer-logo">
+        <p>Transformamos burocracia em eficiência.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="../index.html#home">Início</a></li>
+          <li><a href="#institucional">Institucional</a></li>
+          <li><a href="#equipe">A Equipe</a></li>
+          <li><a href="#investimento">Investimento</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>CONTATO</h4>
+        <p><i class="fab fa-whatsapp"></i> (47) 99180-3171</p>
+        <p><i class="far fa-envelope"></i> marcavcontabilidade@gmail.com</p>
+        <p><i class="fab fa-instagram"></i> @marcavcontabilidade</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Marcav Contabilidade. Todos os direitos reservados.</p>
+        <div>
+          <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Aponta para o script.js na pasta raiz -->
+  <script src="../script.js"></script>
+</body>
+</html>

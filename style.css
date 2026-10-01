@@ -1,0 +1,599 @@
+:root {
+  --black-bg: #030806;
+  --dark-green-bg: #071c14;
+  --card-dark-bg: #081d15;
+  --gold: #c5a059;
+  --text-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* NAVBAR & LOGO */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black-bg);
+  padding: 0.8rem 4%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+  color: var(--gold);
+}
+
+.btn-portfolio {
+  color: var(--gold) !important;
+  border: 1px solid var(--gold);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+
+.btn-whatsapp-nav {
+  border: 1px solid #ffffff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #ffffff;
+  padding: 3.5rem 4%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('tree-bg.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 30%;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text-col { 
+  flex: 1; 
+}
+
+.hero-tag {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  color: #555555;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 440px;
+}
+
+.btn-whatsapp-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0c2017;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp-hero:hover {
+  background-color: var(--dark-green-bg);
+}
+
+.hero-image-col { 
+  flex: 1; 
+}
+
+.hero-img-wrapper { 
+  width: 100%; 
+  max-height: 420px;
+  border-radius: 4px; 
+  overflow: hidden; 
+}
+
+.hero-main-img { 
+  width: 100%; 
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block; 
+}
+
+/* BANNER MEI */
+.banner-mei {
+  background-color: var(--dark-green-bg);
+  color: var(--text-white);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.banner-tagline { 
+  color: var(--gold); 
+  font-size: 0.85rem; 
+  font-weight: bold; 
+  letter-spacing: 2px; 
+  display: block; 
+  margin-bottom: 0.5rem; 
+}
+
+.banner-title { 
+  font-size: 2.2rem; 
+  font-weight: 800; 
+  margin-bottom: 0.2rem; 
+}
+
+.banner-subtitle { 
+  font-style: italic; 
+  color: var(--gold); 
+  font-family: Georgia, serif; 
+  font-size: 1.1rem; 
+  margin-bottom: 2.5rem; 
+}
+
+.banner-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-dark {
+  background-color: var(--card-dark-bg);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card-dark h3 { 
+  color: var(--gold); 
+  font-size: 0.95rem; 
+  margin-bottom: 1.2rem; 
+}
+
+.check-list { 
+  list-style: none; 
+}
+
+.check-list li { 
+  font-size: 0.85rem; 
+  color: #e0e0e0; 
+  margin-bottom: 0.7rem; 
+  display: flex; 
+  gap: 6px; 
+}
+
+.check { 
+  color: var(--gold); 
+  font-weight: bold; 
+}
+
+.card-text { 
+  font-size: 0.85rem; 
+  color: #cccccc; 
+  line-height: 1.5; 
+}
+
+.banner-footer-stamps { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+}
+
+.stamp-logo img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.stamp-badge { 
+  background: #ffffff; 
+  color: #000000; 
+  padding: 0.4rem 0.8rem; 
+  border-radius: 4px; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.stamp-header { font-size: 0.6rem; font-weight: bold; color: #444; }
+.stamp-title { font-size: 0.9rem; font-weight: 800; color: #000; }
+.stamp-sub { font-size: 0.55rem; font-weight: bold; color: #666; }
+
+/* FISCAL & SOCIETÁRIOS */
+.section-fiscal, .section-societarios { 
+  padding: 4rem 0 3rem 0; 
+  background-color: #ffffff; 
+}
+
+.section-subtag { 
+  color: var(--gold); 
+  font-size: 0.85rem; 
+  font-weight: bold; 
+  letter-spacing: 1.5px; 
+}
+
+.section-title-fiscal { 
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #000000; 
+}
+
+.section-description { 
+  color: #555555; 
+  font-size: 1.05rem; 
+  margin-bottom: 2.5rem; 
+}
+
+.fiscal-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.fiscal-card, .societario-card {
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fiscal-card:hover, .societario-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(197, 160, 89, 0.2);
+}
+
+.societario-card { 
+  display: flex; 
+  gap: 1rem; 
+  align-items: flex-start; 
+}
+
+.societario-icon, .fiscal-icon { 
+  font-size: 2.2rem; 
+  color: #000000; 
+}
+
+.societario-card h3, .fiscal-card h3 { 
+  color: var(--gold); 
+  font-size: 0.95rem; 
+  margin-bottom: 0.8rem; 
+}
+
+.societario-card p, .fiscal-card p { 
+  font-size: 0.88rem; 
+  color: #333333; 
+  margin-bottom: 0.4rem; 
+}
+
+.fiscal-notice-bar {
+  background-color: var(--dark-green-bg);
+  color: var(--text-white);
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notice-icon { color: var(--gold); font-size: 1.5rem; }
+.notice-text { font-size: 0.82rem; color: #dddddd; }
+
+/* SEÇÃO CONTABILIDADES */
+.section-contabilidades { 
+  padding: 4rem 0; 
+  background-color: #ffffff; 
+}
+
+.contabilidades-grid { 
+  display: flex; 
+  gap: 3rem; 
+  align-items: center; 
+}
+
+.contabilidades-text { flex: 1.2; }
+
+.contabilidades-image-col { 
+  flex: 1; 
+  max-height: 420px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.contabilidades-title { font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; }
+.gargalos-text { font-size: 0.95rem; color: #111; margin-bottom: 1rem; }
+
+.solucao-box {
+  border: 1px solid #d4af37;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.gold-icon { color: var(--gold); font-size: 1.2rem; }
+.solucao-box p { font-size: 0.85rem; color: #333; }
+
+.contabilidades-desc { font-size: 0.9rem; color: #444; line-height: 1.5; margin-bottom: 1.5rem; }
+
+.beneficios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.beneficio-item { text-align: center; font-size: 0.8rem; color: #333; font-weight: bold; }
+.beneficio-item i { font-size: 1.5rem; color: #000; display: block; margin-bottom: 0.4rem; }
+
+.call-to-action-text { font-size: 0.85rem; color: var(--gold); font-weight: bold; }
+
+.contabilidades-img { 
+  width: 100%; 
+  height: 100%; 
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block; 
+}
+
+/* PORTFOLIO CTA BANNER */
+.portfolio-cta-banner { 
+  background-color: var(--dark-green-bg); 
+  padding: 2.5rem 0; 
+  border-top: 1px solid var(--gold); 
+}
+
+.portfolio-cta-content { display: flex; justify-content: space-between; align-items: center; }
+
+.portfolio-cta-title span { color: var(--gold); font-size: 1.2rem; font-family: Georgia, serif; }
+.portfolio-cta-title h2 { color: #ffffff; font-size: 2.5rem; font-weight: 800; letter-spacing: 2px; line-height: 1; }
+.portfolio-cta-title small { color: var(--gold); font-size: 0.9rem; }
+
+.portfolio-cta-buttons { display: flex; gap: 1rem; }
+.btn-cta-dark {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-cta-dark:hover {
+  background-color: #ffffff;
+  color: var(--black-bg);
+}
+
+/* FOOTER PRINCIPAL */
+.site-footer { background-color: var(--black-bg); color: #ffffff; padding-top: 3rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 2rem; padding-bottom: 2rem; }
+.footer-logo { height: 45px; width: auto; object-fit: contain; margin-bottom: 0.8rem; }
+.footer-brand p { font-size: 0.85rem; color: #aaaaaa; }
+
+.footer-nav h4, .footer-contact-col h4 { color: #ffffff; font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 1px; }
+.footer-nav ul { list-style: none; }
+.footer-nav li { margin-bottom: 0.5rem; }
+.footer-nav a { color: #aaaaaa; text-decoration: none; font-size: 0.85rem; transition: color 0.3s ease; }
+.footer-nav a:hover { color: var(--gold); }
+
+.footer-contact-col p { font-size: 0.85rem; color: #aaaaaa; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; }
+.btn-footer-wsp {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-footer-wsp:hover {
+  background-color: var(--gold);
+  color: var(--black-bg);
+}
+
+.footer-bottom { border-top: 1px solid #11261d; padding: 1rem 0; font-size: 0.75rem; color: #777777; }
+.footer-bottom-content { display: flex; justify-content: space-between; }
+.footer-bottom a { color: #777777; text-decoration: none; }
+
+/* RESPONSIVIDADE (MOBILE & TABLET) */
+@media (max-width: 850px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-bg);
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero-container, 
+  .banner-cards-grid, 
+  .fiscal-cards-grid, 
+  .contabilidades-grid, 
+  .portfolio-cta-content, 
+  .footer-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-img-wrapper, 
+  .hero-main-img, 
+  .contabilidades-image-col, 
+  .contabilidades-img {
+    max-height: 280px;
+  }
+
+  .banner-footer-stamps {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+/* ==========================================================================
+   Seção Detalhamento de Serviços (Societário)
+   ========================================================================== */
+
+.detalhamento-container {
+  margin-top: 3rem;
+}
+
+.detalhamento-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detalhamento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.detalhamento-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.detalhamento-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #0f172a;
+}
+
+.detalhamento-card-price {
+  color: #64748b;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.detalhamento-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.detalhamento-list li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.detalhamento-list .check-icon {
+  color: #16a34a; /* Cor verde para o icone check */
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
